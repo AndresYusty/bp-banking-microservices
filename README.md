@@ -357,4 +357,4 @@ Una vez iniciado el sistema localmente, puede acceder a la interfaz de gestión 
 
 ## 👤 Autor
 
-Implementado como parte de una prueba técnica, aplicando buenas prácticas de desarrollo de software.
+Andres Felipe Cardoso Yusty
