@@ -128,9 +128,24 @@ cd cuenta-service
 mvn spring-boot:run
 ```
 
+## Despliegue en Producción
+
+La aplicación está desplegada y disponible en:
+
+- **URL Base:** `http://3.151.86.111`
+- **Cliente Service:** `http://3.151.86.111:8081`
+- **Cuenta Service:** `http://3.151.86.111:8082`
+
+### Colección de Postman
+
+Se incluye una colección de Postman (`Banking_Microservices.postman_collection.json`) configurada para usar los endpoints de producción. Puedes importarla directamente en Postman para probar la API.
+
 ## Endpoints de la API
 
 ### Cliente Service (Puerto 8081)
+
+**Producción:** `http://3.151.86.111:8081`  
+**Local:** `http://localhost:8081`
 
 #### CRUD de Clientes
 
@@ -143,6 +158,9 @@ mvn spring-boot:run
 - `DELETE /clientes/{id}` - Eliminar cliente
 
 ### Cuenta Service (Puerto 8082)
+
+**Producción:** `http://3.151.86.111:8082`  
+**Local:** `http://localhost:8082`
 
 #### CRUD de Cuentas
 
@@ -171,8 +189,29 @@ mvn spring-boot:run
 
 ## Ejemplos de Uso
 
+> **Nota:** Los ejemplos muestran URLs de producción. Para desarrollo local, reemplaza `3.151.86.111` por `localhost`.
+
 ### 1. Crear Cliente
 
+**Producción:**
+```bash
+POST http://3.151.86.111:8081/clientes
+Content-Type: application/json
+
+{
+  "clienteId": "CLI001",
+  "contrasena": "1234",
+  "estado": true,
+  "nombre": "Jose Lema",
+  "genero": "Masculino",
+  "edad": 35,
+  "identificacion": "1234567890",
+  "direccion": "Otavalo sn y principal",
+  "telefono": "098254785"
+}
+```
+
+**Local:**
 ```bash
 POST http://localhost:8081/clientes
 Content-Type: application/json
@@ -192,6 +231,21 @@ Content-Type: application/json
 
 ### 2. Crear Cuenta
 
+**Producción:**
+```bash
+POST http://3.151.86.111:8082/cuentas
+Content-Type: application/json
+
+{
+  "numeroCuenta": "478758",
+  "tipoCuenta": "Ahorros",
+  "saldoInicial": 2000.00,
+  "estado": true,
+  "clienteId": "CLI001"
+}
+```
+
+**Local:**
 ```bash
 POST http://localhost:8082/cuentas
 Content-Type: application/json
@@ -207,6 +261,19 @@ Content-Type: application/json
 
 ### 3. Realizar Depósito
 
+**Producción:**
+```bash
+POST http://3.151.86.111:8082/movimientos
+Content-Type: application/json
+
+{
+  "numeroCuenta": "478758",
+  "tipoMovimiento": "DEPOSITO",
+  "valor": 600.00
+}
+```
+
+**Local:**
 ```bash
 POST http://localhost:8082/movimientos
 Content-Type: application/json
@@ -220,6 +287,19 @@ Content-Type: application/json
 
 ### 4. Realizar Retiro
 
+**Producción:**
+```bash
+POST http://3.151.86.111:8082/movimientos
+Content-Type: application/json
+
+{
+  "numeroCuenta": "478758",
+  "tipoMovimiento": "RETIRO",
+  "valor": 575.00
+}
+```
+
+**Local:**
 ```bash
 POST http://localhost:8082/movimientos
 Content-Type: application/json
@@ -233,6 +313,12 @@ Content-Type: application/json
 
 ### 5. Generar Estado de Cuenta
 
+**Producción:**
+```bash
+GET http://3.151.86.111:8082/reportes?cliente=CLI001&fechaInicio=2022-02-01T00:00:00&fechaFin=2022-02-28T23:59:59
+```
+
+**Local:**
 ```bash
 GET http://localhost:8082/reportes?cliente=CLI001&fechaInicio=2022-02-01T00:00:00&fechaFin=2022-02-28T23:59:59
 ```
@@ -311,10 +397,12 @@ mvn test
 
 ## Acceso a RabbitMQ Management
 
-Una vez iniciado el sistema, puede acceder a la interfaz de gestión de RabbitMQ en:
-- URL: http://localhost:15672
+Una vez iniciado el sistema localmente, puede acceder a la interfaz de gestión de RabbitMQ en:
+- **Local:** http://localhost:15672
 - Usuario: guest
 - Contraseña: guest
+
+> **Nota:** El acceso a RabbitMQ Management solo está disponible en el entorno local, no en producción por razones de seguridad.
 
 ## Notas Adicionales
 

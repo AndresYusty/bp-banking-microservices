@@ -24,10 +24,10 @@
 							"raw": "{\n  \"clienteId\": \"CLI001\",\n  \"contrasena\": \"1234\",\n  \"estado\": true,\n  \"nombre\": \"Jose Lema\",\n  \"genero\": \"Masculino\",\n  \"edad\": 35,\n  \"identificacion\": \"1234567890\",\n  \"direccion\": \"Otavalo sn y principal\",\n  \"telefono\": \"098254785\"\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8081/clientes",
+							"raw": "http://3.151.86.111:8081/clientes",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8081",
 							"path": [
@@ -42,10 +42,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/clientes",
+							"raw": "http://3.151.86.111:8081/clientes",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8081",
 							"path": [
@@ -60,10 +60,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/clientes/:id",
+							"raw": "http://3.151.86.111:8081/clientes/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8081",
 							"path": [
@@ -85,10 +85,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/clientes/clienteId/:clienteId",
+							"raw": "http://3.151.86.111:8081/clientes/clienteId/:clienteId",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8081",
 							"path": [
@@ -120,10 +120,10 @@
 							"raw": "{\n  \"clienteId\": \"CLI001\",\n  \"contrasena\": \"1234\",\n  \"estado\": true,\n  \"nombre\": \"Jose Lema Actualizado\",\n  \"genero\": \"Masculino\",\n  \"edad\": 36,\n  \"identificacion\": \"1234567890\",\n  \"direccion\": \"Nueva dirección\",\n  \"telefono\": \"098254785\"\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8081/clientes/:id",
+							"raw": "http://3.151.86.111:8081/clientes/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8081",
 							"path": [
@@ -154,10 +154,10 @@
 							"raw": "{\n  \"telefono\": \"0999999999\"\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8081/clientes/:id",
+							"raw": "http://3.151.86.111:8081/clientes/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8081",
 							"path": [
@@ -179,10 +179,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/clientes/:id",
+							"raw": "http://3.151.86.111:8081/clientes/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8081",
 							"path": [
@@ -218,10 +218,10 @@
 							"raw": "{\n  \"numeroCuenta\": \"478758\",\n  \"tipoCuenta\": \"Ahorros\",\n  \"saldoInicial\": 2000.00,\n  \"estado\": true,\n  \"clienteId\": \"CLI001\"\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8082/cuentas",
+							"raw": "http://3.151.86.111:8082/cuentas",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -236,10 +236,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/cuentas",
+							"raw": "http://3.151.86.111:8082/cuentas",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -254,10 +254,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/cuentas/:id",
+							"raw": "http://3.151.86.111:8082/cuentas/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -279,10 +279,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/cuentas/numero/:numeroCuenta",
+							"raw": "http://3.151.86.111:8082/cuentas/numero/:numeroCuenta",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -305,10 +305,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/cuentas/cliente/:clienteId",
+							"raw": "http://3.151.86.111:8082/cuentas/cliente/:clienteId",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -340,10 +340,10 @@
 							"raw": "{\n  \"numeroCuenta\": \"478758\",\n  \"tipoCuenta\": \"Ahorros\",\n  \"saldoInicial\": 2500.00,\n  \"saldoDisponible\": 2500.00,\n  \"estado\": true,\n  \"clienteId\": \"CLI001\"\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8082/cuentas/:id",
+							"raw": "http://3.151.86.111:8082/cuentas/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -374,10 +374,10 @@
 							"raw": "{\n  \"estado\": false\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8082/cuentas/:id",
+							"raw": "http://3.151.86.111:8082/cuentas/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -413,10 +413,10 @@
 							"raw": "{\n  \"numeroCuenta\": \"478758\",\n  \"tipoMovimiento\": \"DEPOSITO\",\n  \"valor\": 600.00\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8082/movimientos",
+							"raw": "http://3.151.86.111:8082/movimientos",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -440,10 +440,10 @@
 							"raw": "{\n  \"numeroCuenta\": \"478758\",\n  \"tipoMovimiento\": \"RETIRO\",\n  \"valor\": 575.00\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8082/movimientos",
+							"raw": "http://3.151.86.111:8082/movimientos",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -458,10 +458,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/movimientos",
+							"raw": "http://3.151.86.111:8082/movimientos",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -476,10 +476,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/movimientos/:id",
+							"raw": "http://3.151.86.111:8082/movimientos/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -501,10 +501,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/movimientos/cuenta/:cuentaId",
+							"raw": "http://3.151.86.111:8082/movimientos/cuenta/:cuentaId",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -536,10 +536,10 @@
 							"raw": "{\n  \"fecha\": \"2022-02-01T10:00:00\",\n  \"tipoMovimiento\": \"DEPOSITO\",\n  \"valor\": 700.00,\n  \"saldo\": 2700.00,\n  \"cuentaId\": 1\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8082/movimientos/:id",
+							"raw": "http://3.151.86.111:8082/movimientos/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -570,10 +570,10 @@
 							"raw": "{\n  \"valor\": 800.00\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8082/movimientos/:id",
+							"raw": "http://3.151.86.111:8082/movimientos/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -600,10 +600,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/reportes?cliente=CLI001&fechaInicio=2022-02-01T00:00:00&fechaFin=2022-02-28T23:59:59",
+							"raw": "http://3.151.86.111:8082/reportes?cliente=CLI001&fechaInicio=2022-02-01T00:00:00&fechaFin=2022-02-28T23:59:59",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"3.151.86.111"
 							],
 							"port": "8082",
 							"path": [
@@ -632,12 +632,12 @@
 	"variable": [
 		{
 			"key": "baseUrlCliente",
-			"value": "http://localhost:8081",
+			"value": "http://3.151.86.111:8081",
 			"type": "string"
 		},
 		{
 			"key": "baseUrlCuenta",
-			"value": "http://localhost:8082",
+			"value": "http://3.151.86.111:8082",
 			"type": "string"
 		}
 	]
