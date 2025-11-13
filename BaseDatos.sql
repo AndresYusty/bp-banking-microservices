@@ -137,34 +137,6 @@ INSERT INTO movimientos (fecha, tipo_movimiento, valor, saldo, cuenta_id) VALUES
 INSERT INTO movimientos (fecha, tipo_movimiento, valor, saldo, cuenta_id) VALUES
 ('2022-02-25 10:30:00', 'DEPOSITO', 500.00, 1500.00, @cuenta5_id);
 
--- Actualizar saldos disponibles en cuentas según los movimientos
-UPDATE cuentas SET saldo_disponible = 2125.00 WHERE numero_cuenta = '478758';
-UPDATE cuentas SET saldo_disponible = 250.00 WHERE numero_cuenta = '225487';
-UPDATE cuentas SET saldo_disponible = 500.00 WHERE numero_cuenta = '495878';
-UPDATE cuentas SET saldo_disponible = 540.00 WHERE numero_cuenta = '496825';
-UPDATE cuentas SET saldo_disponible = 1500.00 WHERE numero_cuenta = '585545';
-
--- =====================================================
--- CONSULTAS DE VERIFICACIÓN
--- =====================================================
-
--- Verificar datos insertados
-SELECT '=== PERSONAS ===' AS '';
-SELECT * FROM personas;
-
-SELECT '=== CLIENTES ===' AS '';
-SELECT c.*, p.nombre, p.identificacion 
-FROM clientes c 
-JOIN personas p ON c.persona_id = p.persona_id;
-
-SELECT '=== CUENTAS ===' AS '';
-SELECT * FROM cuentas;
-
-SELECT '=== MOVIMIENTOS ===' AS '';
-SELECT m.*, c.numero_cuenta 
-FROM movimientos m 
-JOIN cuentas c ON m.cuenta_id = c.cuenta_id 
-ORDER BY m.fecha;
 
 -- =====================================================
 -- FIN DEL SCRIPT
